@@ -6,8 +6,8 @@ const Index = () => (
 
     <Layout>
         <header className="row">
-            <div className="col-md-12">
-                <div className="card car-body bg-secondary text-light">
+            <div className="col-md-12 py-2">
+                <div className="card car-body bg-secondary text-light p-4">
                     <div className="row">
                         <div className="col-md-4">
                             <img src="/cara.png" alt="" className="img-fluid" />
@@ -21,7 +21,13 @@ const Index = () => (
                                 <br />
                                 <br />
                                 Tengo interés en seguir aprendiendo mas a fondo las tecnologías referentes al desarrollo web ya que es algo que encuentro interesante y disfruto de hacer.                            </p>
-                            <a href="/contactame" className="btn btn-light">Contactame</a>
+                            <div className="col-md-3">
+                                <a href="https://www.linkedin.com/in/sebasti%C3%A1n-caffree-8971a8176/" target="_blank" className="btn border border-light rounded d-flex align-items-center">
+                                    <img src="./linkedin.png" width={30} height={30} alt="linkedIn Sebastian" />
+                                    <p className="m-0 text-light text-center w-100">Contactame</p>
+                                </a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -87,9 +93,9 @@ const Index = () => (
                                 )
                             }
                         </ul>
-                        <Link href="/experiences">
+                        {/*  <Link href="/experiences">
                             <a className="btn btn-light"> Saber Más</a>
-                        </Link>
+                        </Link> */}
                     </div>
                 </div>
             </div>

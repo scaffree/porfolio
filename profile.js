@@ -69,19 +69,25 @@ export const experience = [
 export const projects = [
     {
         title: 'Frontend Store',
-        desc: '¿Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, necessitatibus.',
+        desc: 'Lenguajes Usados: HTML y CSS',
         img: 'frontendstore.png',
         src: 'https://frontendstoreapp.netlify.app/'
     },
     {
         title: 'Web Personal',
-        desc: '¿Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, necessitatibus.',
+        desc: 'Lenguajes Usados: HTML y CSS',
         img: 'personalweb.png',
         src: 'https://personalwebwhite.netlify.app/'
     },
     {
+        title: 'Blog acerca del Café',
+        desc: 'Lenguajes Usados: HTML,CSS y Javascript',
+        img: 'blogcafe.png',
+        src: 'https://blogacercadelcafe.netlify.app/'
+    },
+    {
         title: 'Bienes Raices',
-        desc: '¿Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, necessitatibus.',
+        desc: 'Lenguajes y Tecnologias Usadas: HTML, SASS, Javascript, PHP, SQL. Frameworks: MySQL Workbench, TablePLus, Laragon, Apache',
         img: 'bienesraices.png',
         src: 'https://biened-raicesvisual.netlify.app/'
     }
