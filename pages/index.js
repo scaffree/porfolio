@@ -7,24 +7,24 @@ const Index = () => (
     <Layout>
         <header className="row">
             <div className="col-md-12 py-2">
-                <div className="card car-body bg-secondary text-light p-4">
+                <div className="card car-body p-4">
                     <div className="row">
                         <div className="col-md-4">
-                            <img src="/cara.png" alt="" className="img-fluid" />
+                            <img src="/cara2.png" alt="" className="img-fluid" />
 
                         </div>
                         <div className="col-md-8">
                             <h1>Sebastian Caffree</h1>
-                            <h3>FrontEnd Developer</h3>
+                            <h3 className="text-primary">FrontEnd Developer</h3>
                             <p>
                                 Me desempeño en el área informática, actualmente junto con un equipo de trabajo llevamos adelante un proyecto desarrollado en Next.js. Cuento con experiencia en Soporte Técnico a Usuarios y Desarrollo Front-End .
                                 <br />
                                 <br />
                                 Tengo interés en seguir aprendiendo mas a fondo las tecnologías referentes al desarrollo web ya que es algo que encuentro interesante y disfruto de hacer.                            </p>
                             <div className="col-md-3">
-                                <a href="https://www.linkedin.com/in/sebasti%C3%A1n-caffree-8971a8176/" target="_blank" className="btn border border-light rounded d-flex align-items-center">
+                                <a href="https://www.linkedin.com/in/sebasti%C3%A1n-caffree-8971a8176/" target="_blank" className="btn border border-primary rounded d-flex align-items-center">
                                     <img src="./linkedin.png" width={30} height={30} alt="linkedIn Sebastian" />
-                                    <p className="m-0 text-light text-center w-100">Contactame</p>
+                                    <p className="m-0 text-primary text-center w-100">Contactame</p>
                                 </a>
 
                             </div>
@@ -39,14 +39,14 @@ const Index = () => (
             <div className="col-md-4">
                 <div className="card bg-light">
                     <div className="card-body">
-                        <h1>Habilidades</h1>
+                        <h1 className="text-primary">Habilidades</h1>
                         {
                             skills.map(({ skill, percentage }, i) => (
                                 <div className="py-3" key={i}>
                                     <h5>{skill}</h5>
                                     <div className="progress">
                                         <div
-                                            className="progress-bar"
+                                            className="progress-bar bg-dark"
                                             role="progressbar"
                                             style={{ width: `${percentage}%` }}>
 
@@ -62,7 +62,7 @@ const Index = () => (
             <div className="col-md-8">
                 <div className="card bg-light">
                     <div className="card-body">
-                        <h1>Experiencia</h1>
+                        <h1 className="text-primary">Experiencia</h1>
                         <ul>
 
                             {
@@ -70,7 +70,7 @@ const Index = () => (
                                     <li key={i}>
                                         <h3>{workplace}</h3>
                                         <h5>{from}-{to} </h5>
-                                        <p><i>{desc} </i></p>
+                                        <p className="bg-primary rounded text-light p-1"><i>{desc} </i></p>
                                         <ul>
 
                                             {
@@ -120,7 +120,7 @@ const Index = () => (
                                             <h3>{title} </h3>
                                             <p>{desc} </p>
                                             <Link href={src}>
-                                                <a className="btn btn-dark" target='_blank'>VER</a>
+                                                <a className="btn btn-primary" target='_blank'>VER</a>
                                             </Link>
                                         </div>
                                     </div>
